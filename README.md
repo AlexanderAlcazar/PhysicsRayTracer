@@ -15,8 +15,7 @@ Physics Ray Tracer is a Python-based project designed to simulate and visualize 
 - [How It Works](#how-it-works)
 - [Educational Value](#educational-value)
 - [Contribution Guide](#contribution-guide)
-- [License](#license)
-
+- [Acknowledgments](#acknowledgments)
 ---
 
 ## Overview
@@ -110,5 +109,11 @@ We welcome contributions to improve the Physics Ray Tracer. Follow these steps:
 3. Submit a pull request with a detailed description.
 
 Feel free to submit issues or feature requests to enhance this project.
+
+---
+## Acknowledgments
+
+- Special thanks to the group of students who contributed their time and expertise.
+- Project was completed as part of the Physics R133 course curriculum.
 
 ---
