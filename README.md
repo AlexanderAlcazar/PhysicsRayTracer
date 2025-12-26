@@ -1,55 +1,72 @@
 # Physics Ray Tracer
 
-![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
 
-Physics Ray Tracer is a Python project designed to simulate and visualize rays interacting with various boundaries. This project serves as both an educational aid and a foundation for physics-based simulations.
+Physics Ray Tracer is a Python-based project designed to simulate and visualize the behavior of rays interacting with boundaries. It serves as both an educational tool and a foundation for advanced physics-based ray simulations.
 
 ---
 
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [Main Features](#main-features)
-- [File Structure](#file-structure)
+- [Overview](#overview)
+- [Features](#features)
+- [Technical Architecture](#technical-architecture)
 - [Getting Started](#getting-started)
-- [Acknowledgments](#acknowledgments)
+- [How It Works](#how-it-works)
+- [Educational Value](#educational-value)
+- [Contribution Guide](#contribution-guide)
+- [License](#license)
 
 ---
 
-## Project Overview
+## Overview
 
-Physics Ray Tracer models the behavior of physics-based rays interacting with user-defined boundaries and visualizes the results in an interpretable way.
-
----
-
-## Main Features
-
-- **Boundary Handling:** Allows creation and manipulation of boundaries for ray simulations.
-- **Ray Dynamics:** Simulates rays with physics-based rules for interactions such as reflection.
-- **Simulation Runner:** Integrates all components into a single executable for simulation execution.
+Physics Ray Tracer is designed to showcase the interaction of rays with customizable boundaries. By simulating ray behavior, you can:
+- Experiment with basic physics principles.
+- Visualize real-world scenarios such as light reflection, refraction, and boundary constraints.
+- Use this project as a building block for more sophisticated simulations.
 
 ---
 
-## File Structure
+## Features
 
-1. **Boundary.py** ([View File](https://github.com/AlexanderAlcazar/PhysicsRayTracer/blob/master/Boundary.py)):
-   Handles boundary logic for ray interaction simulations.
+- **Boundary Handling**  
+  Define and manage boundaries with the `Boundary.py` module.
 
-2. **Ray.py** ([View File](https://github.com/AlexanderAlcazar/PhysicsRayTracer/blob/master/Ray.py)):
-   Implements the core functionality and attributes of a physics-based ray.
+- **Physics-Based Rays**  
+  Simulate and implement realistic ray functionalities using `Ray.py`.
 
-3. **main.py** ([View File](https://github.com/AlexanderAlcazar/PhysicsRayTracer/blob/master/main.py)):
-   Entry point allowing seamless integration of rays and boundaries for simulation runs.
+- **Interactive Simulation**  
+  Run high-quality visualizations or educational physics experiments with the `main.py` entry point.
+
+- **Modular Design**  
+  Easily extend and adapt the project for additional use cases or advanced physics.
+
+---
+
+## Technical Architecture
+
+The project consists of the following key components:
+
+- **Boundary Module (`Boundary.py`)**  
+  Handles the definition, initialization, and interaction of boundaries with rays. Includes advanced algorithms for managing constraints.
+
+- **Ray Module (`Ray.py`)**  
+  Implements ray-specific logic like initialization of origin, direction vectors, interaction with boundaries, and dynamic behaviors.
+
+- **Main Execution Script (`main.py`)**  
+  Serves as the entry point, integrating `Boundary` and `Ray` modules. Use this to visualize and simulate physics-based interactions.
+
+![File Overview](https://img.shields.io/badge/Files-3_Golden_Modules-informational)
 
 ---
 
 ## Getting Started
 
-### Prerequisites
+### Prerequisites:
+- Python 3.x should be installed on your system.
 
-- Python 3.8 or newer installed on your system.
-
-### Installation
-
+### Installation:
 1. Clone the repository:
    ```bash
    git clone https://github.com/AlexanderAlcazar/PhysicsRayTracer.git
@@ -58,17 +75,40 @@ Physics Ray Tracer models the behavior of physics-based rays interacting with us
    ```bash
    cd PhysicsRayTracer
    ```
-3. Run the simulation:
-   ```bash
-   python main.py
-   ```
+
+### Running the Simulation:
+Run the `main.py` script to start the simulation:
+```bash
+python main.py
+```
 
 ---
 
-## Acknowledgments
+## How It Works
 
-Special thanks to contributors and collaborators who provided inspiration and feedback. This project was created to enhance educational learning in computational physics and simulation design.
+The simulation revolves around a core physics algorithm:
+- **Ray Initialization:** Rays are created at an origin point with a direction vector.
+- **Boundary Interactions:** Rays dynamically interact with customizable boundaries defined in `Boundary.py`.
+- **Collision Detection:** Using mathematical techniques, collisions and boundary constraints are computed during runtime.
+- **Physics Visualization:** Outputs a real-time simulation illustrating the ray-bouncing behavior.
 
 ---
 
-*Designed and developed for educational purposes.*
+## Educational Value
+
+- **Hands-On Learning:** Perfect for students or educators looking to explore ray mechanics or boundary algorithms.
+- **Simulation Insights:** Provides visual and quantitative insights into ray-based physics phenomena.
+- **Customizable:** Make changes to the codebase to explore unique research questions or physics scenarios.
+
+---
+
+## Contribution Guide
+
+We welcome contributions to improve the Physics Ray Tracer. Follow these steps:
+1. Fork the repository.
+2. Make your changes in a feature branch.
+3. Submit a pull request with a detailed description.
+
+Feel free to submit issues or feature requests to enhance this project.
+
+---
